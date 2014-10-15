@@ -1,0 +1,20 @@
+<div class="container">
+	<div class="page-head"><h1>Show article</h1></div>
+	<p>
+		<strong>Title:</strong>
+		<%= @article.title %>	
+	</p>
+	<p>
+		<strong>Text:</strong>
+		<%= @article.text%>
+	</p>
+
+
+	<h3>Comments</h3>
+	<%= render @article.comments %>
+	
+
+
+	<h3>Add a comment:</h3>
+	<%= render 'comments/form' %>
+</div>

@@ -1,0 +1,13 @@
+<%= form_for([@article, @article.comments.build]) do |f| %>
+	<fieldset>
+		<div class="form-group">
+			<%= f.label :commenter %>
+			<%= f.text_field :commenter %>
+		</div>
+		<div class="form-group">
+			<%= f.label :body %>
+			<%= f.text_area :body %>
+		</div>
+		<button type="submit" class="btn btn-default">Add comment</button>
+	</fieldset>
+<% end %>
